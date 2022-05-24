@@ -5,7 +5,7 @@
 # Version : 1.0
 
 
-def gcd(number1, number2):
+def gcd(number1: int, number2: int) -> int:
     if number1 < number2:
         temp = number1
         number1 = number2

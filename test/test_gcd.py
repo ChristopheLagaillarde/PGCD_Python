@@ -7,7 +7,7 @@
 from gcd import gcd
 
 
-def test_gcd():
+def test_gcd() -> None:
     assert (gcd(3, 5) == 1), "the program does not work for gcd(3, 5)"
 
 
