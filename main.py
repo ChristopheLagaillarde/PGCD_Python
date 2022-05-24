@@ -1,16 +1,12 @@
-a = int(input("Saisir le premier nombre"))
-b = int(input("Saisir le premier nombre"))
+from gcd import gcd
 
-if a < b:
-    temp = a
-    a = b
-    b = temp
 
-r = b % a
+def main():
+    print(gcd(int(input("gcd, number1 = ")), int(input("gcd, number2 = "))))
 
-while r != 0:
-    a = b
-    b = r
-    r = b % a
 
-print("Le PGCD est", b)
+if __name__ == "__main__":
+    try:
+        main()
+    except ValueError:
+        print("Wrong input")
